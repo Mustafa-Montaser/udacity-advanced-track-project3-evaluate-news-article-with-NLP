@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Evalate News Article</title>
+<link href="main.css" rel="stylesheet"></head>
+
+<body>
+
+    <header>
+        <div>Evalate News Article</div>
+    </header>
+
+    <main>
+        <section>
+            <form onsubmit="return Client.handleSubmit(event)">
+                <input id="url" type="text" name="input" value="" placeholder="Enter Valid URL">
+                <input type="submit" name="btn" value="submit" onclick="return Client.handleSubmit(event)">
+                <!-- <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)"> -->
+            </form>
+        </section>
+
+        <section id="resultsSection" class="hidden">
+            <p><strong>Form Results:</strong></p>
+            <div id="results">
+                <div id="agreement"></div>
+                <div id="subjectivity"></div>
+                <div id="confidence"></div>
+                <div id="irony"></div>
+                <div id="score_tag"></div>
+    </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>foooter</p>
+    </footer>
+
+<script type="text/javascript" src="main.js"></script></body>
+
+</html>
