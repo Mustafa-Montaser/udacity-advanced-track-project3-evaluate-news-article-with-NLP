@@ -1,6 +1,7 @@
 function handleSubmit(event) {
     event.preventDefault();
     let url = document.getElementById('url').value;
+    console.log(Client.isURL(url));
     if (Client.isURL(url)) {
         fetch("http://localhost:3000/test", {  
             method: 'POST',
